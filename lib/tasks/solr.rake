@@ -16,7 +16,7 @@ namespace :solr do
     abort 'Solr already downloaded.' if solr_downloaded?
 
     Dir.chdir '/tmp' do
-      sh "wget -c #{SOLR_URL}"
+      #sh "wget -c #{SOLR_URL}"
 
       sh "echo \"#{SOLR_MD5SUM}  /tmp/#{SOLR_FILENAME}\" | md5sum -c -" do |ok, res|
         #abort "MD5SUM do not match" if !ok
