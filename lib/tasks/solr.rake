@@ -5,7 +5,7 @@ namespace :solr do
   SOLR_FILENAME = "apache-solr-#{SOLR_VERSION}.tgz" 
   SOLR_MD5SUM = 'ac11ef4408bb015aa3a5eefcb1047aec'
   SOLR_URL = "#{APACHE_MIRROR}/lucene/solr/#{SOLR_VERSION}/#{SOLR_FILENAME}" 
-  SOLR_DIR = "apache-solr-#{SOLR_VERSION}" 
+  SOLR_DIR = "solr-#{SOLR_VERSION}" 
 
   def solr_downloaded?
     File.exists?("#{SOLR_PATH}/start.jar")
